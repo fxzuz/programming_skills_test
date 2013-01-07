@@ -21,6 +21,7 @@
   OUTPUT
   26.6666666666667 (As the maximum fluctuation in price is between 22 and 30)
 
+
   2. Write a program that accepts 4 words as input (one per line) and identifies whether they are palindromes. A palindrome is a word that reads the same when read back to front. The program should print the alphabetically sorted list of palindromes (one per line). The program output should be in lowercase.
   
   If the following input is given to the program:
