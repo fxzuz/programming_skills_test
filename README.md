@@ -28,14 +28,14 @@ Programming Skills Test (Hands-on programming skills)
 
   Write a program that accepts 4 words as input (one per line) and identifies whether they are palindromes. A palindrome is a word that reads the same when read back to front. The program should print the alphabetically sorted list of palindromes (one per line). The program output should be in lowercase.
   
-  If the following input is given to the program:
+  INPUT
 
     waas
     gaag
     haaha
     ABBA
 
-  Then the output of program should be:
+  OUTPUT
 
     abba
     gaag
