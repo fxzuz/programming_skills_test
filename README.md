@@ -1,16 +1,16 @@
 Programming Skills Test (Hands-on programming skills)
 =============
 
-  Loop Control
-  Operators
-  String Handling
-  Arrays
-  Hash table/Collections
-  Regular Expressions
-  Numbers
-  Files & I/O
+* Loop Control
+* Operators
+* String Handling
+* Arrays
+* Hash table/Collections
+* Regular Expressions
+* Numbers
+* Files & I/O
 
-  ###1. 
+### 1. 
   
   Write a program that accepts a comma separated string of numbers depicting the daily stock price of AXY Company. The program should calculate the biggest daily fluctuation (in terms of percentage) of the stock price on any given day.
 
