@@ -182,3 +182,30 @@ OUTPUT
     1
     9
     100
+    
+### 9. Password checker
+
+A bank requires its clients to change their internet banking passwords based on the following conditions:
+
+1. Alphabets between A-Z or a-z (inclusive) are allowed 
+
+2. The number of alphabets should not be less than 4 
+
+3. Numbers between 0-9 (inclusive) are allowed 
+
+4. The count of numbers in the password should not be less than 2 
+
+Write a program to validate the internet banking password for the above conditions. If the password meets the conditions then "VALID" should be printed, else "INVAL
+ID" should be printed.
+
+INPUT
+
+    a2
+    abcdEF12
+    abcdEF12(*
+
+OUTPUT
+
+    INVALID
+    VALID
+    VALID
