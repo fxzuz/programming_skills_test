@@ -88,7 +88,9 @@ Then the corresponding output should be:
     7
     9
     
-### 5. Write a program that accepts a number of ASCII values between 40 and 125 (both inclusive) and concatenates the corresponding characters to form a string. The progra
+### 5. Number to ASCII
+
+Write a program that accepts a number of ASCII values between 40 and 125 (both inclusive) and concatenates the corresponding characters to form a string. The progra
 m accepts a multi-line input. The first line contains a number representing how many ASCII values are in the input. The subsequent lines contain the ASCII values th
 emselves (one ASCII value per line).
 
