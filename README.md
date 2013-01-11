@@ -17,11 +17,13 @@ Programming Skills Test (Hands-on programming skills)
   For example, let us suppose the following is the input string:
 
   INPUT
+  
     20,23,25,30,22,21,16
 
   Then the corresponding biggest fluctuation is:
 
   OUTPUT
+  
     26.6666666666667 (As the maximum fluctuation in price is between 22 and 30)
 
 ### 2.
