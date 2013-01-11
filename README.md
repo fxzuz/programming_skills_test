@@ -41,3 +41,30 @@ Programming Skills Test (Hands-on programming skills)
 
     abba
     gaag
+    
+### 3. Area of the square
+
+Write a program which will take the volume of the cube as its input. The program should calculate the area of a square whose side is half the length of the side of 
+the cube. The program should print the area of the square. 
+
+Definitions:
+
+Volume of cube = a*a*a, where a is the side of a cube
+
+Area of Square = b*b, where b is the side of the square
+
+
+For example, let us suppose the following is the volume inputted to the program:
+
+
+INPUT
+-----
+8
+27
+
+Then the corresponding output will be as follows:
+
+OUTPUT
+------
+1
+2.25
