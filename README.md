@@ -209,3 +209,31 @@ OUTPUT
     INVALID
     VALID
     VALID
+    
+### 10. Divisors 
+
+Write a program that evaluates the sum of all the divisors of a given number, other than the number itself. For example, if the number if 14, the divisors are 1,2,7
+ and 14. If we exclude 14, the sum of the remaining divisors will be 1+2+7 = 10.
+
+The program accepts a multi-line input. The first line contains a number representing how many numbers are being inputted. Subsequent lines contain the numbers them
+selves. The inputted numbers should be between 1 and 100000 (inclusive). The output should be printed one per line corresponding to the sum of the divisors of the p
+articular inputted number.
+
+Below is some example input and output:
+
+INPUT
+
+    4 (this represents how many numbers exist in the input set)
+    13
+    15
+    10
+    6
+
+OUTPUT
+
+    1
+    9
+    8
+    6
+
+Note: In case of input data being supplied to the question, it should be assumed to be a console input.
