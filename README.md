@@ -66,3 +66,24 @@ Then the corresponding output will be as follows:
 
     1
     2.25
+
+### 4. First and last digit of the sum
+
+Write a program which will accept a number as its input. You are required to calculate the sum of the first and last digits of the square of the number given as inp
+ut. In case the square of the number is a single digit number then the square should be printed as it is.
+
+For example, let us suppose the following input is given to the program:
+
+  INPUT
+
+    3
+    5
+    6
+
+Then the corresponding output should be:
+
+  OUTPUT
+
+    9
+    7
+    9
