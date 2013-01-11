@@ -259,3 +259,7 @@ Note: In case of input data being supplied to the question, it should be assumed
   OUTPUT
   
     #0C0D0E,#2D9C17,INVALID
+
+### 12. Divisible by 7
+ 
+  Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 1000 and 1200 (both included). The numbers obtained should be printed in a comma separated sequence on a single line.
