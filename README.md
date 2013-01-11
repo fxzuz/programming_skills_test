@@ -87,3 +87,25 @@ Then the corresponding output should be:
     9
     7
     9
+    
+### 5. Write a program that accepts a number of ASCII values between 40 and 125 (both inclusive) and concatenates the corresponding characters to form a string. The progra
+m accepts a multi-line input. The first line contains a number representing how many ASCII values are in the input. The subsequent lines contain the ASCII values th
+emselves (one ASCII value per line).
+
+
+The following is an example of a valid input:
+
+INPUT
+
+    5 (this indicates the total number of ASCII values in the input set)
+    65
+    67
+    69
+    70
+    71
+
+The output is printed as a string. The ASCII value of A is 65, C is 67, E is 69, F is 70, G is 71 and therefore the output will be as follows:
+
+OUTPUT
+
+    ACEFG
