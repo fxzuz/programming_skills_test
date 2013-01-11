@@ -161,3 +161,24 @@ This
     Will
     Test
     You
+    
+### 8. Cubes
+
+Write a program which will accept a set of numbers. For each number, it will calculate the sum of the cubes for the first 'n' natural numbers counting up to that nu
+mber. The first line of the input should consist of a number representing how many numbers are in the input set. The subsequent lines contain the numbers themselves
+ (one per line).
+
+Here is an example of how the input and output would look: 
+
+INPUT
+
+    3 (this indicates the total count of numbers in the input set)
+    1
+    2
+    4
+
+OUTPUT
+
+    1
+    9
+    100
