@@ -237,3 +237,25 @@ OUTPUT
     6
 
 Note: In case of input data being supplied to the question, it should be assumed to be a console input.
+
+### 11. RGB numbers
+
+ Write a program which will convert the given RGB input values into the corresponding hexadecimal values preceded with a # sign.
+ 
+ A single input sequence will be provided, consisting of RGB values separated by "-". Each RGB combination will be separated by ",". The outputs should be comma sepa
+ rated and in uppercase. Also, it should be checked if a color value is greater than 255. In such a case, the output for the corresponding combination should be give
+ n as INVALID.
+ 
+ Note: Number 10, which has a hexadecimal value of A, must be represented as "0A" and not as "A". The same rule applies to other single digit hexadecimal numbers.
+ 
+ Example
+ 
+ Suppose the following input sequence is supplied to the program:
+
+  INPUT
+  
+    12-13-14,45-156-23,234-234-256
+ 
+  OUTPUT
+  
+    #0C0D0E,#2D9C17,INVALID
