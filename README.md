@@ -135,3 +135,29 @@ OUTPUT
     Eddie-3
     Nica-4
     Montoya-6
+
+### 7. Print initial caps
+
+Write a program which will accept three sentences (one sentence per line) and print the words having Initial Caps within the sentences. Below is an example.
+
+Here is an example. If the below three sentences are given to the program as input,
+
+INPUT
+
+    This is a Program
+    Coding test of Initial Caps
+    the program Will Test You
+
+Then, the output would look like:
+
+OUTPUT
+
+This
+
+    Program
+    Coding
+    Initial
+    Caps
+    Will
+    Test
+    You
