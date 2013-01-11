@@ -111,3 +111,27 @@ The output is printed as a string. The ASCII value of A is 65, C is 67, E is 69,
 OUTPUT
 
     ACEFG
+
+### 6. Sort racers
+
+During a car rally the time keeper wrote down the driver names along with their finishing positions in random order. Write a program to sort the names of the driver
+s in ascending order of their finishing positions.
+
+
+For example, let us suppose the following input is given to the program:
+
+INPUT
+
+    Eddie-3
+    Michael-1
+    Nica-4
+    Montoya-6
+
+Then the program should print the output as follows:
+
+OUTPUT
+
+    Michael-1
+    Eddie-3
+    Nica-4
+    Montoya-6
