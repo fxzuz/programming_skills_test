@@ -10,7 +10,9 @@ Programming Skills Test (Hands-on programming skills)
   Numbers
   Files & I/O
 
-  1. Write a program that accepts a comma separated string of numbers depicting the daily stock price of AXY Company. The program should calculate the biggest daily fluctuation (in terms of percentage) of the stock price on any given day.
+  ###1. 
+  
+  Write a program that accepts a comma separated string of numbers depicting the daily stock price of AXY Company. The program should calculate the biggest daily fluctuation (in terms of percentage) of the stock price on any given day.
 
   For example, let us suppose the following is the input string:
 
