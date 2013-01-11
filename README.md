@@ -1,4 +1,5 @@
-# Programming Skills Test (Hands-on programming skills)
+Programming Skills Test (Hands-on programming skills)
+=============
 
   Loop Control
   Operators
@@ -26,12 +27,12 @@
   
   If the following input is given to the program:
 
-   waas
-   gaag
-   haaha
-   ABBA
+    waas
+    gaag
+    haaha
+    ABBA
 
   Then the output of program should be:
 
-   abba
-   gaag
+    abba
+    gaag
