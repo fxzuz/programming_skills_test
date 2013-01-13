@@ -292,4 +292,16 @@ OUTPUT
     11600
     7400
 
-Note: You should assume that input to the program is from console input (raw_input) 
+### 14. Sum two lines 
+
+    Write a program which will print the sum of parallel numbers in two input strings (one input string per line). The numbers in each string will be separated by commas. The program will print the individual parallel sum of numbers in a line, separated by commas.
+
+
+INPUT
+
+    1,2,3,4,5,6,7,8,9
+    1,1,1,1,1,1,1,1,1
+
+OUTPUT
+
+    2,3,4,5,6,7,8,9,10
