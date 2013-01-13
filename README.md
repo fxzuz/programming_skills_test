@@ -517,3 +517,127 @@ The corresponding output to be printed by the program is:
 OUTPUT
 
     -18
+
+### 24. Count vowels
+
+Write a program that accepts 5 sentences as input (one sentence per line) and counts the number of vowels (a,e,i,o,u,A,E,I,O,U) occurring in each sentence. The program should print the vowel count corresponding to each of the five sentences as shown in the below example. 
+
+INPUT
+
+    This is a test
+    The Fox and the Hound
+    May the force be with you
+    Are you talking to me
+    Go West
+
+OUTPUT
+
+    4
+    6
+    8
+    8
+    2
+
+
+### 25. Convert to int
+
+Write a program which accepts 3 input values (one per line) and checks whether they can be converted to their corresponding int values. If any particular value is successfully converted, then the original inputted value should be printed and if it cannot, the program should print "INVALID" in uppercase.
+
+INPUT
+
+    123 4
+    testing
+    9
+
+OUTPUT
+
+    INVALID
+    INVALID
+    9
+
+### 26. HEX values of letters 
+
+Write a program which prints the hexadecimal values of the letters from A to Z. The output should be in uppercase.
+
+The program should print the output in the following format:
+
+OUTPUT
+
+    value1
+    value2
+    value3
+    .
+    .
+    .
+    .
+    .
+
+
+### 27. 
+
+Write a program which prints the numbers between 2 and 20000 (both inclusive) whose sixth root is an integer and which are a square of a number and also a cube of a number. An example of such a number is 64 since its sixth root is 2. 64 is also the square of 8 and cube of 4. 
+
+OUTPUT
+
+    Num1
+    Num2
+    Num3
+
+### 28. Valid ip address
+
+Write a program which will validate four inputted ip addresses (one per line). A valid ip address must follow the form xxx.xxx.xxx.xxx where xxx is a number from 0-255. The program should print "VALID" if the ip address is valid, and "INVALID" if the ip address is invalid. 
+
+Example:
+
+INPUT
+
+    12.12.13.14.
+    256.245.234.221
+    1.2.3.4
+    23.24.25.26.
+
+OUTPUT
+
+    INVALID
+    INVALID
+    VALID
+    INVALID
+
+### 29. Dec to bin 
+
+Write a program which accepts 4 integer values (one per line) and converts them to their corresponding 16 bit binary values. The output should be printed one value per line.
+
+INPUT
+
+    8
+    10
+    17
+    23
+
+OUTPUT
+
+    0000000000001000
+    0000000000001010
+    0000000000010001
+    0000000000010111
+
+
+### 30. Valid dates
+
+Write a program that accepts four dates (one per line) and checks to see if they are in the date format "mm-dd-yyyy" (month-day-year). If the date is found to be in the valid format, the program should print "VALID", if not, the program should print "INVALID". 
+
+Example:
+
+INPUT
+
+    01-01-1999
+    13-11-1999
+    10-30-1999
+    1999-01-02
+
+OUTPUT
+
+    VALID
+    INVALID
+    VALID
+    INVALID
