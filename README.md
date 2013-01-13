@@ -305,3 +305,215 @@ INPUT
 OUTPUT
 
     2,3,4,5,6,7,8,9,10
+
+### 15. A frog hops
+
+  Kermit, a frog hops in a particular way such that:
+1. He hops 20cm in the first hop, 10cm in the second hop and 5cm in the third hop.
+2. After three hops Kermit rests for a while and then again follows the same hopping pattern.
+
+  Calculate the total distance travelled by Kermit (in centimeters) for the provided number of hops. Exactly 4 numbers of hops will be provided to the program (one number per line) as per the below example.
+
+INPUT
+Suppose the following number of hops is provided to the program:
+
+    4
+    6
+    3
+    5
+
+OUTPUT
+Then the total distance covered should be displayed as follows:
+
+    55
+    70
+    35
+    65
+
+### 16. Dates format
+
+  Write a program which will take the year (yyyy) and the numeric sequence of the month (0-11) as its input. The program will return the day on which the 28th of that particular month and year falls. The input can consist of two year-month combinations, one combination per line.
+
+The numeric sequence of months is as follows:
+
+0 – Jan
+1 – Feb
+2 – March
+and so on......
+
+The format for supplying the input is:
+
+1999-5
+
+Where 1999 is the year and 5 is the numeric sequence of the month (corresponding to June). The program should display the day on which June 28, 1999 fell, and in this case the output will be MONDAY. 
+
+The output should be displayed in uppercase letters.
+
+INPUT
+
+    1999-5
+    1998-6
+
+OUTPUT
+
+    MONDAY
+    TUESDAY
+
+### 17. Employee and events
+
+Ross is an event organizer. He has received data regarding the participation of employees in two different events. Some employees have participated in only one event and others have participated in both events. Ross now needs to count the number of employees who have taken part in both events. The records received by Ross consist of employee ids, which are unique. Write a program that accepts the employee ids participating in each event (the first line relates to the first event and the second line relates to the second event). The program should print the number of common employee ids in both the events.
+
+INPUT
+
+    1001,1002,1003,1004,1005
+    1106,1008,1005,1003,1016,1017,1112
+
+Now the common employee ids are 1003 and 1005, so the program should give the output as:
+
+OUTPUT
+
+    2
+
+### 18. Filter numbers
+
+  Write a program that prints the numbers between 258 and 393 (both inclusive) which do not end with 5. The program should print the output so as to have one value per line. The output would therefore follow the below format:
+
+
+OUTPUT
+
+    value1
+    value2
+    value3
+    .
+    .
+    .
+    .
+    .
+
+### 19. Username
+
+  Sam wants to select a username in order to register on a website.
+
+  The rules for selecting a username are:
+
+1. The minimum length of the username must be 5 characters and the maximum may be 10.
+2. It should contain at least one letter from A-Z
+3. It should contain at least one digit from 0-9
+4. It should contain at least one character from amongst @#*=
+5. It should not contain any spaces
+
+  Write a program which accepts 4 usernames (one username per line) as input and checks whether each of them satisfy the above mentioned conditions.
+  If a username satisfies the conditions, the program should print PASS (in uppercase)
+  If a username fails the conditions, the program should print FAIL (in uppercase)
+
+Suppose the following usernames are supplied to the program:
+
+INPUT
+
+    1234@a
+    ABC3a#@
+    1Ac@
+    ABC 3a#@
+
+OUPTUT
+
+    FAIL
+    PASS
+    FAIL
+    FAIL
+
+### 20. Distance travelled
+
+Write a program to calculate the distance travelled by a car at different time intervals. The initial velocity of the car is 36 km/hr and the constant acceleration is 5 m/s2.
+
+The formula to calculate distance is:
+
+Distance Travelled = u*t+((a*t*t)/2) where,
+u = initial velocity of the car (36 km/hr)
+a = acceleration of the car (5 m/s2)
+t = time duration in seconds
+
+The program should accept 2 time intervals as the input (one time interval per line) and print the distance travelled in meters by the car (one output per line).
+
+Definitions:
+1 kilometer = 1000 meters
+1 hour = 3600 seconds
+
+Let us suppose following are the inputs supplied to the program
+
+INPUT
+
+    10
+    8
+
+OUTPUT
+
+    350
+    240
+
+### 21. Students
+
+Write a program that accepts 10 student records (roll number and score) and prints them in decreasing order of scores. In case there are multiple records pertaining to the same student, the program should choose a single record containing the highest score. The program should be capable of accepting a multi-line input. Each subsequent line of input will contain a student record, that is, a roll number and a score (separated by a hyphen). The output should consist of the combination of roll number and corresponding score in decreasing order of score.
+
+INPUT
+
+    1001-40
+    1002-50
+    1003-60
+    1002-80
+    1005-35
+    1005-55
+    1007-68
+    1009-99
+    1009-10
+    1004-89
+
+OUTPUT
+
+    1009-99
+    1004-89
+    1002-80
+    1007-68
+    1003-60
+    1005-55
+    1001-40 
+
+### 22. Christmas structure
+
+Write a program which will print the below structures according to the input provided to the program. The program should accept 3 inputs in the form of numbers between 1 and 9, both inclusive (one number per line) and then generate the corresponding structures based on the input.
+
+Suppose the following sequence of numbers is supplied to the program:
+
+INPUT
+
+    3
+    2
+    4
+
+OUTPUT
+
+      1
+     2 2
+    3 3 3
+     1
+    2 2
+       1
+      2 2
+     3 3 3
+    4 4 4 4 
+
+### 23. ASCII values sum 
+
+Write a program which will accept a single pair of strings separated by a comma; the program should calculate the sum of ascii values of the characters of each string. The program should then subtract the sum of the ascii values of the second string from the sum of the ascii values of the first string.
+
+
+INPUT
+
+    123ABC,456DEF
+
+Then the sum of the ascii values of the characters in '123ABC' is 348 and in '456DEF' it is 366. The Difference between these numbers is 348 – 366 = -18 
+The corresponding output to be printed by the program is: 
+
+OUTPUT
+
+    -18
