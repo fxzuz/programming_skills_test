@@ -294,7 +294,7 @@ OUTPUT
 
 ### 14. Sum two lines 
 
-    Write a program which will print the sum of parallel numbers in two input strings (one input string per line). The numbers in each string will be separated by commas. The program will print the individual parallel sum of numbers in a line, separated by commas.
+  Write a program which will print the sum of parallel numbers in two input strings (one input string per line). The numbers in each string will be separated by commas. The program will print the individual parallel sum of numbers in a line, separated by commas.
 
 
 INPUT
