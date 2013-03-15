@@ -1,8 +1,8 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
-for my $num (258..393) {
+for (258..393) {
 
-    print $num."\n" if $num % 5 != 0;
+    say if $_ % 5 != 0;
 }

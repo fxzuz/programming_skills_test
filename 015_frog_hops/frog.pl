@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 while (my $str = <>) {
 
@@ -9,7 +9,7 @@ while (my $str = <>) {
     my $dist = 0;
     my $hop  = 1;
 
-    for (1..$str) {
+    for (1 .. $str) {
 
         if ($i == 1) {
 
@@ -27,5 +27,6 @@ while (my $str = <>) {
             $hop  = 1;
         }
     }
-    printf "%d\n", $dist;
+
+    say $dist;
 }

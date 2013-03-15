@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12; 
 
 my %racers;
 while (my $str = <>) {
@@ -10,7 +10,7 @@ while (my $str = <>) {
     $racers{$position} = $racer;
 }
 
-for my $position (sort keys %racers) {
+for (sort keys %racers) {
 
-    printf "%s-%s\n", $racers{$position}, $position;
+    say $racers{$_}, '-', $_;
 }

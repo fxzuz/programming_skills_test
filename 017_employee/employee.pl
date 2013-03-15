@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 my $first_line  = <>;
 my $second_line = <>;
@@ -12,9 +12,10 @@ my @second_emp = split ',', $second_line;
 
 my %result;
 my $number = 0;
-for my $emp (@first_emp, @second_emp) {
 
-    $number++ if ++$result{$emp} > 1;
+for (@first_emp, @second_emp) {
+
+    $number++ if ++$result{$_} > 1;
 }
 
-printf "%s\n", $number;
+say $number;

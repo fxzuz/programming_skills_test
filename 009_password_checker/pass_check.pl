@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12; 
 
 while (my $pass = <>) {
 
@@ -10,8 +10,8 @@ while (my $pass = <>) {
     my $num_digits = $pass =~ tr/\d{1}//;
     
     my $result = ($num_letter < 4 or $num_digits < 2)
-               ? 'INVALID'
-               : 'VALID';
-
-    printf "%s\n", $result;
+        ? 'INVALID'
+        : 'VALID'
+    ;
+    say $result;
 }

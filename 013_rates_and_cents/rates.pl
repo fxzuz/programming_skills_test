@@ -1,8 +1,9 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 while (my $usage = <>) {
+
     chomp $usage;
     my $sum = 0;
 
@@ -20,6 +21,6 @@ while (my $usage = <>) {
         $usage -= $a2;
     }
 
-  $sum += 60 * $usage;
-  print "$sum\n";
+    $sum += 60 * $usage;
+    say $sum;
 }

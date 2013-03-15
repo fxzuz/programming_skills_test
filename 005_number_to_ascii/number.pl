@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 my ($total_num, $cur_num);
 
@@ -20,5 +20,5 @@ while (my $num = <>) {
 
     # process only total_num records
     last if $cur_num > $total_num;
-    printf "%s\n", chr($num);
+    say chr($num);
 }

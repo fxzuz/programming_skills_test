@@ -1,34 +1,20 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 my @words;
-while (my $word = <>) {
+while (my $word = lc <>) {
 
     chomp $word;
-    $word       = lc $word;
-    my $half    = length($word) / 2;
-    my @letters = split //, $word;
-    
-    my $is_palindrom = 1;
-    for my $num (1 .. $half) {
+    my @letters     = split //, $word;
+    my @letters_rev = reverse @letters;
 
-        my $first = $num - 1;
-        my $last  = $num * -1;
-        
-        if ($letters[$first] ne $letters[$last]) {
-
-            $is_palindrom = 0;
-            last;
-        }
-    }
-
-    push @words, $word if $is_palindrom;
+    push @words, $word if @letters ~~ @letters_rev;
 }
 
-for my $word (sort @words) {
+for (sort @words) {
 
-    printf("%s\n", $word);
+    say;
 }
 
 __DATA__

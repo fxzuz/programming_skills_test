@@ -1,11 +1,11 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
-for my $num (1000 .. 1200) {
+for (1000 .. 1200) {
 
-    next if not $num % 7 == 0;
-    next if $num % 5 == 0;
+    next if not $_ % 7 == 0;
+    next if $_ % 5 == 0;
 
-    printf "%s\n", $num;
+    say $_;
 }

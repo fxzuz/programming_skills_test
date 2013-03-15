@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 my $str1 = <>;
 my $str2 = <>;
@@ -9,9 +9,9 @@ my @numbers1 = split ',', $str1;
 my @numbers2 = split ',', $str2;
 
 my @sum;
-for my $num (0 .. $#numbers1) {
+for (0 .. $#numbers1) {
 
-    push @sum, ($numbers1[$num] + $numbers2[$num]);
+    push @sum, ($numbers1[$_] + $numbers2[$_]);
 }
 
-printf "%s\n", join ',', @sum;
+say join ',', @sum;

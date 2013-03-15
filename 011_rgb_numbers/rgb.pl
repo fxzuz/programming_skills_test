@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 my @converts;
 while (my $line = <>) {
@@ -22,11 +22,9 @@ while (my $line = <>) {
         my $result = $is_valid
                    ? sprintf "#%s", join '', @convert_values
                    : 'INVALID';
-        push @converts, uc($result);
+        push @converts, uc $result;
     }
 }
 
-for my $convert (@converts) {
-
-    printf "%s\n", $convert;
-}
+$" = ',';
+say "@converts";

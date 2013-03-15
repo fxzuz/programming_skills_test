@@ -1,6 +1,6 @@
 #!/usr/env/bin perl
 
-use strict;
+use v5.12;
 
 while (my $line = <>) {
 
@@ -16,7 +16,8 @@ while (my $line = <>) {
         $avg      += $price;
     }
 
-    $avg     = int($avg / scalar @prices);
+    $avg     = int($avg / @prices);
     my $fluc = ($max_price - $avg) / $max_price * 100;
-    print $fluc."\n";
+
+    say $fluc;
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 while (my $area = <>) {
 
@@ -8,5 +8,5 @@ while (my $area = <>) {
     my $a = $area ** (1/3);
 
     my $s = ($a / 2 ) ** 2;    
-    print $s."\n";
+    say $s;
 }

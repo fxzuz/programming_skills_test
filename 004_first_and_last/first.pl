@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 while (my $num = <>) {
 
@@ -11,10 +11,10 @@ while (my $num = <>) {
 
         my ($first, $last) = (split //, $square)[0, -1];
         my $sum = $first + $last; 
-        print $sum."\n"; 
+        say $sum;
     }
     else {
 
-        print $square."\n"; 
+        say $square;
     }
 }

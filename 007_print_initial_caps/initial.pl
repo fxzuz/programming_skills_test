@@ -1,14 +1,14 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 while (my $str = <>) {
 
     chomp $str;
     my @words = split / /, $str;
 
-    for my $word (@words) {
+    for (@words) {
 
-        printf "%s\n", $word if $word =~ m/^[A-Z]{1}/; 
+        say if m/^[A-Z]{1}/;
     }
 }

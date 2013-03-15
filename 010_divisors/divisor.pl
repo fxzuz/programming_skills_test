@@ -1,9 +1,8 @@
 #!/usr/bin/env perl
 
-use strict;
+use v5.12;
 
 my ($total_num, $cur_num);
-
 while (my $num = <>) {
 
     chomp $num;
@@ -21,10 +20,10 @@ while (my $num = <>) {
     # process only total_num records
     last if $cur_num > $total_num;
 
-    my $sum = 0;
-    for my $i (1 .. $num - 1) {
+    my $sum;
+    for (1 .. $num - 1) {
 
-       $sum += $i if $num % $i == 0; 
+       $sum += $_ if $num % $_ == 0; 
     }
-    printf "%s\n", $sum;
+    say $sum;
 }
