@@ -1,12 +1,12 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
 my @converts;
-while (my $line = <>) {
+while (<>) {
 
-    chomp $line;
-    my @colors = split ',', $line;
+    chomp;
+    my @colors = split ',', $_;
 
     for my $color (@colors) {
    
@@ -18,13 +18,11 @@ while (my $line = <>) {
             $is_valid = 0 if $value > 255;
         }
 
-        my @convert_values = map { sprintf "%02x", $_ } @values;
         my $result = $is_valid
-                   ? sprintf "#%s", join '', @convert_values
+                   ? sprintf "#%s", join '', map { sprintf "%02x", $_ } @values
                    : 'INVALID';
         push @converts, uc $result;
     }
 }
 
-$" = ',';
-say "@converts";
+say join ',', @converts;

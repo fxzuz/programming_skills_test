@@ -1,7 +1,6 @@
 #!/usr/bin/env perl
 
 use common::sense;
-use Data::Dumper;
 
 my $input = <>;
 my @ascii = split ',', $input;

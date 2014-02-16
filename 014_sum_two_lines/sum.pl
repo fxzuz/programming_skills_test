@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
 my $str1 = <>;
 my $str2 = <>;

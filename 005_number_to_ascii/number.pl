@@ -1,24 +1,18 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-my ($total_num, $cur_num);
+my ($total, $num);
+while (<>) {
 
-while (my $num = <>) {
-
-    chomp $num;
-
+    chomp;
     if ($. == 1) {
 
-        $total_num = $num;
+        $total = $_;
         next;
-    }
-    else {
-
-        $cur_num++;
     }
 
     # process only total_num records
-    last if $cur_num > $total_num;
-    say chr($num);
+    last if ++$num > $total;
+    say chr($_);
 }

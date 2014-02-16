@@ -1,14 +1,14 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-while (my $pass = <>) {
+while (<>) {
 
-    chomp $pass;
+    chomp $_;
     my ($num_letter, $num_digits, $num_spec, $num_space);
-    my $length = length($pass);
+    my $length = length($_);
 
-    my @letters = split '', $pass;
+    my @letters = split '', $_;
     for (@letters) {
 
         given($_) {
@@ -19,7 +19,7 @@ while (my $pass = <>) {
         }
     }
 
-    my $result = (!$num_letter or !$num_digits or !$num_spec or $num_space or $length < 5 or $length > 10 )
+    my $result = (!$num_letter || !$num_digits || !$num_spec || $num_space || $length < 5 || $length > 10 )
                ? 'FAIL'
                : 'PASS'
     ;

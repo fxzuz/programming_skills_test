@@ -1,15 +1,15 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 use Time::Local;
 use POSIX qw(strftime);
 
 my @days = qw(SUNDAY MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY);
 
-while (my $str = <>) {
+while (<>) {
 
-    chomp $str;
-    my ($year, $month) = split '-', $str;
+    chomp;
+    my ($year, $month) = split '-', $_;
     
     my $time = timegm(0, 0, 0, 28, $month, $year - 1900);
     say strftime("%^A", localtime($time));

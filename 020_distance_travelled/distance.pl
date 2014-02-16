@@ -1,13 +1,12 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
 my $u = 36 * 1000 / 3600;
 my $a = 5;
 
-while (my $time = <>) {
+while (<>) {
 
-    chomp $time;
-    my $dist = $u * $time + ($a * $time * $time)/2;   
-    say $dist;
+    chomp;
+    say $u * $_ + ($a * $_ ** 2)/2;   
 }

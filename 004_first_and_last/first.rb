@@ -8,9 +8,8 @@ ARGF.each do |line|
         s = s.to_s
         first = s[0].to_i
         last  = s[-1].to_i
-        sum = first + last
-        puts sum
-    else
-        puts s
-    end
+        s = first + last
+	end
+
+	puts s
 end

@@ -1,26 +1,26 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-while (my $usage = <>) {
+while (<>) {
 
-    chomp $usage;
+    chomp;
     my $sum = 0;
 
-    my $a1 = $usage - 300;
+    my $a1 = $_ - 300;
     if ($a1 > 0) {
 
         $sum += 80 * $a1;
-        $usage -= $a1;
+        $_ -= $a1;
     }
 
-    my $a2 = $usage - 100;
+    my $a2 = $_ - 100;
     if ($a2 > 0) {
 
         $sum += 70 * $a2;
-        $usage -= $a2;
+        $_ -= $a2;
     }
 
-    $sum += 60 * $usage;
+    $sum += 60 * $_;
     say $sum;
 }

@@ -1,13 +1,12 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
 my %students;
-while (my $str = <>) {
+while (<>) {
 
-    chomp $str;
-    my ($id, $score) = split '-', $str;
-   
+    chomp;
+    my ($id, $score) = split '-', $_;
     $students{$id} = $score if $score > $students{$id};
 }
 

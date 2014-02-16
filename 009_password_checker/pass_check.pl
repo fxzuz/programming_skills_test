@@ -1,17 +1,17 @@
 #!/usr/bin/env perl
 
-use v5.12; 
+use common::sense;
 
-while (my $pass = <>) {
+while (<>) {
 
-    chomp $pass;
+    chomp;
 
-    my $num_letter = $pass =~ tr/[a-zA-Z]{1}//;
-    my $num_digits = $pass =~ tr/\d{1}//;
+    my $num_letter = $_ =~ tr/[a-zA-Z]{1}//;
+    my $num_digits = $_ =~ tr/\d{1}//;
     
-    my $result = ($num_letter < 4 or $num_digits < 2)
-        ? 'INVALID'
-        : 'VALID'
-    ;
-    say $result;
+    say (
+		$num_letter < 4 || $num_digits < 2
+        	? 'INVALID'
+        	: 'VALID'
+	);
 }

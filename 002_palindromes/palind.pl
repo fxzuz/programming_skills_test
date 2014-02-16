@@ -1,36 +1,18 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
 my @words;
-while (my $word = lc <>) {
+while (<>) {
+    chomp;
 
-    chomp $word;
-    my @letters     = split //, $word;
-    my @letters_rev = reverse @letters;
+    my @chars     = split //, lc $_;
+    my @rev_chars = reverse @chars;
 
-    push @words, $word if @letters ~~ @letters_rev;
+    push @words, $_ if @chars ~~ @rev_chars;
 }
 
 for (sort @words) {
 
     say;
 }
-
-__DATA__
-  word = line.rstrip().lower()
-  half = len(word) / 2
-
-  is_palindrom = 1
-  for num in range(1, half):
-
-    first = num - 1
-    last = -1 * num  
-
-    if word[first] != word[last]:
-      is_palindrom = 0
-      break
-  
-  if is_palindrom: words.append(word)
-
-

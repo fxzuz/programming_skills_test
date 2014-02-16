@@ -1,12 +1,11 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-while (my $str = <>) {
+while (<>) {
 
-    chomp $str;
-    my @words = split / /, $str;
-
+    chomp;
+    my @words = split / /, $_;
     for (@words) {
 
         say if m/^[A-Z]{1}/;

@@ -1,27 +1,27 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-while (my $str = <>) {
+while (<>) {
 
-    chomp $str;
+    chomp;
 
     my $dist = 0;
     my $hop  = 1;
 
-    for (1 .. $str) {
+    for (1 .. $_) {
 
-        if ($i == 1) {
+        if ($hop == 1) {
 
             $dist += 20;
             $hop  = 2;
         }
-        elsif ($i == 2) {
+        elsif ($hop == 2) {
         
             $dist += 10;
             $hop  = 3;
         }
-        elsif ($i == 3) {
+        elsif ($hop == 3) {
 
             $dist += 5;
             $hop  = 1;

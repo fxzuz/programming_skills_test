@@ -1,14 +1,11 @@
-#!/usr/env/bin perl
+#!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-while (my $line = <>) {
-
-    chomp $line;
-
-    my @prices    = split ',', $line;
-    my $max_price = 0;
-    my $avg       = 0;
+while (<>) {
+    chomp;
+    my @prices = split ',', $_;
+	my ($avg, $max_price);
 
     for my $price (@prices) {
 

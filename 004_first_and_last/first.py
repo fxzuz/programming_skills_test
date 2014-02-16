@@ -10,8 +10,8 @@ for line in sys.stdin:
   if square > 9:
 
     square = str(square)
-    first = square[0]
-    last  = square[-1]
+    first = int(square[0])
+    last  = int(square[-1])
     sum = first + last
     print sum
   else:

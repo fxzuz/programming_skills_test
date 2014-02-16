@@ -7,9 +7,8 @@ ARGF.each_with_index do |line, idx|
     if idx == 0
         total_num = num
         next
-    else
-        cur_num += 1
-    end
+	end
 
+    cur_num += 1
     puts num.chr
 end

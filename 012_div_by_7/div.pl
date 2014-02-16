@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
 for (1000 .. 1200) {
 

@@ -1,20 +1,17 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-while (my $num = <>) {
+while (<>) {
 
-    chomp $num;
-    my $square = $num ** 2;
+    chomp;
+    my $square = $_ ** 2;
 
     if ($square > 9) {
 
         my ($first, $last) = (split //, $square)[0, -1];
-        my $sum = $first + $last; 
-        say $sum;
+        $square = $first + $last; 
     }
-    else {
 
-        say $square;
-    }
+    say $square;
 }

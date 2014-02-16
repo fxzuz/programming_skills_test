@@ -1,30 +1,24 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-my ($total_num, $cur_num);
-while (my $num = <>) {
+my ($total, $current);
+while (<>) {
 
-    chomp $num;
-
+    chomp;
     if ($. == 1) {
 
-        $total_num = $num;
+        $total = $_;
         next;
     }
-    else {
 
-        $cur_num++;
-    }
-
-    # process only total_num records
-    last if $cur_num > $total_num;
+    # process only total records
+    last if ++$current > $total;
 
     my $sum;
-    for (1 .. $num) {
+    for (1 .. $_) {
 
         $sum += $_ ** 3;
     }
-
     say $sum;
 }

@@ -1,16 +1,16 @@
 #!/usr/bin/env perl
 
-use v5.12; 
+use common::sense;
 
 my %racers;
-while (my $str = <>) {
+while (<>) {
 
-    chomp $str;
-    my ($racer, $position) = split '-', $str;
+    chomp;
+    my ($racer, $position) = split '-', $_;
     $racers{$position} = $racer;
 }
 
 for (sort keys %racers) {
 
-    say $racers{$_}, '-', $_;
+    say "$racers{$_}-$_";
 }

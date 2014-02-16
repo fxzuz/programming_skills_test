@@ -1,24 +1,20 @@
 #!/usr/bin/env perl
 
-use v5.12;
+use common::sense;
 
-my ($total_num, $cur_num);
+my ($total, $current);
 while (my $num = <>) {
 
     chomp $num;
 
     if ($. == 1) {
 
-        $total_num = $num;
+        $total = $num;
         next;
-    }
-    else {
-
-        $cur_num++;
     }
 
     # process only total_num records
-    last if $cur_num > $total_num;
+    last if ++$current > $total;
 
     my $sum;
     for (1 .. $num - 1) {
