@@ -9,5 +9,5 @@ ARGF.each do |pass|
 	is_spec   = pass.scan(/[@#*=]{1}/).size
 	is_space  = pass.scan(/[ ]{1}/).size
 
-	puts is_letter > 0 && is_digits > 0 && is_spec > 0 && is_space == 0 && len >= 5 && len <= 10 ? 'PASS' : 'FAIL'
+	puts is_letter > 0 && is_digits > 0 && is_spec > 0 && is_space == 0 && len.between?(5,10) ? 'PASS' : 'FAIL'
 end
