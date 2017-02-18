@@ -90,9 +90,7 @@ Then the corresponding output should be:
     
 ### 5. Number to ASCII
 
-Write a program that accepts a number of ASCII values between 40 and 125 (both inclusive) and concatenates the corresponding characters to form a string. The progra
-m accepts a multi-line input. The first line contains a number representing how many ASCII values are in the input. The subsequent lines contain the ASCII values th
-emselves (one ASCII value per line).
+Write a program that accepts a number of ASCII values between 40 and 125 (both inclusive) and concatenates the corresponding characters to form a string. The program accepts a multi-line input. The first line contains a number representing how many ASCII values are in the input. The subsequent lines contain the ASCII values themselves (one ASCII value per line).
 
 
 The following is an example of a valid input:
@@ -114,8 +112,7 @@ OUTPUT
 
 ### 6. Sort racers
 
-During a car rally the time keeper wrote down the driver names along with their finishing positions in random order. Write a program to sort the names of the driver
-s in ascending order of their finishing positions.
+During a car rally the time keeper wrote down the driver names along with their finishing positions in random order. Write a program to sort the names of the drivers in ascending order of their finishing positions.
 
 
 For example, let us suppose the following input is given to the program:
@@ -152,8 +149,7 @@ Then, the output would look like:
 
 OUTPUT
 
-This
-
+    This
     Program
     Coding
     Initial
@@ -164,9 +160,7 @@ This
     
 ### 8. Cubes
 
-Write a program which will accept a set of numbers. For each number, it will calculate the sum of the cubes for the first 'n' natural numbers counting up to that nu
-mber. The first line of the input should consist of a number representing how many numbers are in the input set. The subsequent lines contain the numbers themselves
- (one per line).
+Write a program which will accept a set of numbers. For each number, it will calculate the sum of the cubes for the first 'n' natural numbers counting up to that number. The first line of the input should consist of a number representing how many numbers are in the input set. The subsequent lines contain the numbers themselves (one per line).
 
 Here is an example of how the input and output would look: 
 
@@ -195,8 +189,7 @@ A bank requires its clients to change their internet banking passwords based on 
 
 4. The count of numbers in the password should not be less than 2 
 
-Write a program to validate the internet banking password for the above conditions. If the password meets the conditions then "VALID" should be printed, else "INVAL
-ID" should be printed.
+Write a program to validate the internet banking password for the above conditions. If the password meets the conditions then "VALID" should be printed, else "INVALID" should be printed.
 
 INPUT
 
@@ -212,12 +205,9 @@ OUTPUT
     
 ### 10. Divisors 
 
-Write a program that evaluates the sum of all the divisors of a given number, other than the number itself. For example, if the number if 14, the divisors are 1,2,7
- and 14. If we exclude 14, the sum of the remaining divisors will be 1+2+7 = 10.
+Write a program that evaluates the sum of all the divisors of a given number, other than the number itself. For example, if the number if 14, the divisors are 1,2,7 and 14. If we exclude 14, the sum of the remaining divisors will be 1+2+7 = 10.
 
-The program accepts a multi-line input. The first line contains a number representing how many numbers are being inputted. Subsequent lines contain the numbers them
-selves. The inputted numbers should be between 1 and 100000 (inclusive). The output should be printed one per line corresponding to the sum of the divisors of the p
-articular inputted number.
+The program accepts a multi-line input. The first line contains a number representing how many numbers are being inputted. Subsequent lines contain the numbers themselves. The inputted numbers should be between 1 and 100000 (inclusive). The output should be printed one per line corresponding to the sum of the divisors of the particular inputted number.
 
 Below is some example input and output:
 
@@ -240,11 +230,9 @@ Note: In case of input data being supplied to the question, it should be assumed
 
 ### 11. RGB numbers
 
- Write a program which will convert the given RGB input values into the corresponding hexadecimal values preceded with a # sign.
+Write a program which will convert the given RGB input values into the corresponding hexadecimal values preceded with a # sign.
  
- A single input sequence will be provided, consisting of RGB values separated by "-". Each RGB combination will be separated by ",". The outputs should be comma sepa
- rated and in uppercase. Also, it should be checked if a color value is greater than 255. In such a case, the output for the corresponding combination should be give
- n as INVALID.
+A single input sequence will be provided, consisting of RGB values separated by "-". Each RGB combination will be separated by ",". The outputs should be comma separated and in uppercase. Also, it should be checked if a color value is greater than 255. In such a case, the output for the corresponding combination should be given as INVALID.
  
  Note: Number 10, which has a hexadecimal value of A, must be represented as "0A" and not as "A". The same rule applies to other single digit hexadecimal numbers.
  
