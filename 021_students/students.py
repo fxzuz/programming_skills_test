@@ -9,5 +9,5 @@ for line in sys.stdin:
     if id not in students or students[id] < score:
         students[id] = score
 
-for id in sorted(students, reverse=True):
-    print "%s %s" % (id, students[id])
+for id in sorted(students, key=students.get, reverse=True):
+    print "%s-%s" % (id, students[id])

@@ -19,18 +19,6 @@ func (s Student) String() string {
 	return fmt.Sprintf("%d-%d", s.Num, s.Score)
 }
 
-type ByScoreSorter []Student
-
-func (ss ByScoreSorter) Len() int {
-	return len(ss)
-}
-func (ss ByScoreSorter) Swap(i, j int) {
-	ss[i], ss[j] = ss[j], ss[i]
-}
-func (ss ByScoreSorter) Less(i, j int) bool {
-	return ss[i].Score > ss[j].Score
-}
-
 func main() {
 	mapStudents := make(map[int]int)
 
@@ -56,7 +44,9 @@ func main() {
 	for num, score := range mapStudents {
 		students = append(students, Student{num, score})
 	}
-	sort.Sort(ByScoreSorter(students))
+
+	sort.Slice(students, func(i, j int) bool { return students[i].Score > students[j].Score })
+
 	for _, s := range students {
 		fmt.Println(s)
 	}
