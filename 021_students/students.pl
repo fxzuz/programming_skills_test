@@ -10,7 +10,7 @@ while (<>) {
     $students{$id} = $score if $score > $students{$id};
 }
 
-for (sort {$b <=> $a} keys %students) {
+for (sort { $students{$b} <=> $students{$a} } keys %students) {
 
     say "$_-$students{$_}";
 }
